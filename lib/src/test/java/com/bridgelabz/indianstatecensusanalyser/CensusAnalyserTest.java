@@ -10,12 +10,13 @@ public class CensusAnalyserTest
 	private static final String CSV_WITH_WRONG_DELIMITER = "./src/test/resources/CensusDataWithWrongDelimiter.csv";
 	private static final String CSV_WITH_INCORRECT_HEADER = "./src/test/resources/CensusDataIncorrectHeader.csv";
 	private static final String INDIAN_CENSUS_CSV_MISSING = "./src/test/resources/IndiaStateCensusDataMissingHeader.csv";
-	private static final String INDIAN_CENSUS_EMPTY_FILE = "./src/test/resources/EmpltyCSV.csv";
+	//private static final String INDIAN_CENSUS_EMPTY_FILE = "./src/test/resources/EmpltyCSV.csv";
 
 	
 	
 	 @Test
-	    public void givenIndianCensus_CSVFileReturnsCorrectRecords() {
+	    public void givenIndianCensus_CSVFileReturnsCorrectRecords() 
+	 {
 	        try {
 	            CensusAnalyser censusAnalyser = new CensusAnalyser();
 	            int numOfRecords = censusAnalyser.loadIndiaCensusData(INDIA_CENSUS_CSV_FILE_PATH);
