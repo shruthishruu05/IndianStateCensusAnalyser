@@ -1,6 +1,7 @@
 package com.bridgelabz.indianstatecensusanalyser;
 
-public class CSVBuilderException extends Throwable {
+public class CSVBuilderException extends Throwable 
+{
     enum ExceptionType {
         CENSUS_FILE_PROBLEM, UNABLE_TO_PARSE
     }
