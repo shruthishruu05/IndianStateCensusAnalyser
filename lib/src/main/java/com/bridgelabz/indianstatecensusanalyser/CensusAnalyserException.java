@@ -1,7 +1,8 @@
 package com.bridgelabz.indianstatecensusanalyser;
 
 public class CensusAnalyserException extends Exception {
-	public CensusAnalyserException(String message, String name) {
+	public CensusAnalyserException(String message, String name) 
+	{
         super(message);
         this.type = ExceptionType.valueOf(name);
     }
