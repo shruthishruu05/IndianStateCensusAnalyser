@@ -1,6 +1,7 @@
 package com.bridgelabz.indianstatecensusanalyser;
 
-public class IndianCensusDAO {
+public class IndianCensusDAO 
+{
 	public String state;
     public int densityPerSqKm;
     public int areaInSqKm;
